@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include <graphics.h>
+void main() {
+ int gd = DETECT, gm;
+ int x = 10, y = 0, n, i;
+ initgraph(&gd,&gm,"C:\\TC\\BGI");
+ printf("2D Graphs");
+ printf("nEnter the input");
+ scanf("%d", &n);
+ printf("nEnter the input size");
+ for (i = 0; i < n; i++) {
+  printf("nEnter input size");
+  scanf("%d", &a[i]);
+ }
+ cleardevice();
+ while (y <= 200) {
+  line(0, y, 10, y);
+  y = y + 20;
+ }
+ while (x <= 400) {
+  line(x, 200, x, 210);
+  x = x + 20;
+ }
+ setcolor(5);
+ for (i = 0; i < n; i++) {
+  putpixel(k[i], m[i], 8);
+ }
+  getch();
+}
